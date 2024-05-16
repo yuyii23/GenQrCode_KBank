@@ -1,0 +1,17 @@
+body {
+  font-weight: 500;
+  color: rgba(var(--v-theme-textPrimary), 1);
+  overflow: hidden;
+}
+
+.sb {
+  font-family: "Sarabun", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --radius: 6px;
+}

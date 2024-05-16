@@ -1,0 +1,75 @@
+.v-chip.v-chip--size-default,
+p,
+.v-card-text,
+.v-btn__content,
+.v-label,
+.v-text-field input,
+.v-list-item-title,
+.v-card-item,
+.v-card-title,
+a,
+span {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.v-icon--size-default {
+  font-size: 1.6rem;
+}
+
+p,
+.v-card-text {
+  color: rgb(var(--v-theme-textPrimary))
+}
+
+h1,
+.text-h1 {
+  font-size: 3.2rem !important;
+  line-height: 4rem;
+  color: rgb(var(--v-theme-textSecondary))
+}
+
+h2,
+.text-h2 {
+  font-size: 3rem !important;
+  line-height: 4rem;
+  color: rgb(var(--v-theme-textSecondary))
+}
+
+h3,
+.text-h3 {
+  font-size: 2.5rem !important;
+  line-height: 4rem;
+  color: rgb(var(--v-theme-textSecondary))
+}
+
+h4,
+.text-h4 {
+  font-size: 2.4rem !important;
+  line-height: 4rem;
+  color: rgb(var(--v-theme-textSecondary))
+}
+
+h5,
+.text-h5 {
+  font-size: 2rem !important;
+  line-height: 4rem;
+  color: rgb(var(--v-theme-textSecondary))
+}
+
+h6,
+.text-h6 {
+  font-size: 1.6rem !important;
+  line-height: 3rem;
+  color: rgb(var(--v-theme-textSecondary))
+}
+
+p,
+.font-regular {
+  font-weight: 400;
+}
+
+.v-divider {
+  border-color: rgb(var(--v-theme-borderColor));
+  opacity: 1;
+}

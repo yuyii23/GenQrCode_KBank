@@ -1,0 +1,35 @@
+@for $size from 0 through 10 {
+  .border-#{$size} {
+    border: $size * 1px solid rgb(var(--v-theme-borderColor), 1);
+  }
+}
+
+// .border-1 {
+//   border: 1px solid rgb(var(--v-theme-borderColor), 1);
+// }
+@for $size from 0 through 10 {
+  .line-#{$size} {
+    display: -webkit-box;
+    -webkit-line-clamp: $size !important;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+  }
+}
+
+$aline: (
+  "start": 'left',
+  "end": 'right',
+);
+
+@each $aline, $i in $aline {
+  .border-#{$aline} {
+    border-#{$i}: 1px solid rgb(var(--v-theme-borderColor));
+  }
+}
+
+@for $i from 1 through 30 {
+  .fs-#{$i} {
+    font-size: $i * 1px !important;
+  }
+}

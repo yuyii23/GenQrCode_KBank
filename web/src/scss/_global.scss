@@ -1,0 +1,78 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgb(214, 214, 214);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(177, 177, 177);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(177, 177, 177);
+}
+
+@for $i from 1 through 30 {
+  .fs-#{$i} {
+    font-size: $i * 1px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bg-main {
+  background-image: url(../assets/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100dvh;
+}
+
+.v-container {
+  max-width: 540px;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  background-image: url("../assets/bg_form.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 65px;
+  margin-left: 6px;
+
+  input {
+    margin-top: 10px;
+  }
+}
+
+.v-field__outline {
+  box-shadow: unset;
+  border: 0;
+
+  .v-field__outline__start {
+    box-shadow: unset;
+    border: 0;
+  }
+
+  .v-field__outline__end {
+    box-shadow: unset;
+    border: 0;
+  }
+}
+.v-toast__item--error {
+  background-color: #ffffff59;
+}
+
+.v-toast__item {
+  margin: 2.5em 10px;
+}
