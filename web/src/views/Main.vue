@@ -28,7 +28,7 @@ const phone = useField<string>('phone');
 const onSubmitForm = handleSubmit(async (value) => {
   const { data } = await axios.get(`/check-phone?phone_number=${value.phone}`);
   if (data.is_registered) {
-    value != undefined && router.push('/complete');
+    value.phone != undefined && router.push('/complete');
   } else {
     const { data } = await axios.post(`/register`, {
       phone_number: value.phone,
@@ -36,7 +36,7 @@ const onSubmitForm = handleSubmit(async (value) => {
     if (data.qrCode) {
       router.push('/qr-code/' + data.qrCode);
     } else {
-      value != undefined && router.push('/complete');
+      value.phone != undefined && router.push('/complete');
     }
   }
 });
@@ -87,5 +87,33 @@ const onSubmitForm = handleSubmit(async (value) => {
   bottom: 50px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+:deep(.form-input) {
+  width: 100%;
+  background-image: url('../assets/bg_form.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 65px;
+  margin-left: 6px;
+
+  input {
+    margin-top: 10px;
+  }
+}
+
+:deep(.v-field__outline) {
+  box-shadow: unset;
+  border: 0;
+
+  .v-field__outline__start {
+    box-shadow: unset;
+    border: 0;
+  }
+
+  .v-field__outline__end {
+    box-shadow: unset;
+    border: 0;
+  }
 }
 </style>

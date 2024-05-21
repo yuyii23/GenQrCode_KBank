@@ -16,6 +16,11 @@ export const router = createRouter({
       name: 'QrCode',
       component: () => import('@/views/QRCode.vue'),
     },
+    {
+      path: '/report',
+      name: 'Report',
+      component: () => import('@/views/Report.vue'),
+    },
   ],
   linkActiveClass: 'router-link-active',
 });
